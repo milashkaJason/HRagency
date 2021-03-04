@@ -1,0 +1,26 @@
+.faq {
+  padding: 85px 0 199px 0;
+  position: relative;
+}
+.faq_text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--darkText);
+  padding: 42px 0 0 0;
+}
+.faq_box {
+  padding: 114px 0 0 0;
+}
+.faq_background {
+  text-align: center;
+  position: absolute;
+  text-align: center;
+  z-index: 0;
+  top: 28%;
+  left: 0;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 90%;
+  color: #FFF4ED;
+}

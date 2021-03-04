@@ -1,0 +1,46 @@
+.header_menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 15px 0 0 0;
+}
+
+.header_menu-item {
+  list-style: none;
+  margin: 0 18px;
+  & a {
+    color: #000;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 16px;
+    transition: all ease .2s;
+    &:hover {
+      transition: all ease .2s;
+      color: var(--primaryColor);
+    }
+  }
+  & input{
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #261104;;
+  }
+  &:nth-child(1) {
+    font-weight: 600;
+    margin: 0 0 0 0;
+  }
+  &:nth-child(2) {
+    font-weight: 600;
+    margin: 0 124px 0 153px;
+  }
+}
+.header_lope {
+  position: relative;
+  top: -6px;
+  left: 195px;
+  z-index: 2;
+}
+.header_search {
+  position: absolute;
+  outline: none;
+}

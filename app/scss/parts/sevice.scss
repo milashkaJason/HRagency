@@ -1,0 +1,106 @@
+//цвета блоков START
+.service_block {
+  height: 100%;
+  padding: 0 72px 134px 73px;
+}
+
+.service_block__black {
+  background: var(--darkText);
+}
+
+.service_block__white {
+  background: #FFF4ED;
+}
+
+.service_block__orange {
+  background: var(--primaryColor);
+}
+
+.service_block__light-orange {
+  background: #ED8F52;
+}
+
+.service_block__pink {
+  background: #F4D7C4;
+}
+
+.service_block__transparent {
+  background: #FBF6F4;
+}
+
+//цвета блоков END
+
+.service_title {
+  text-align: center;
+  color: #000;
+  padding: 150px 0 40px 0;
+}
+
+.service_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.service_btn {
+  position: absolute;
+  margin: 50px 0 0 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  transition: all ease .4s;
+  color: var(--primaryColor);
+  &:hover {
+    color: #f61e1e;
+  }
+
+  &:hover, &:focus {
+    outline: none;
+    border: none;
+    transition: all ease .4s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  //стрелка возле кнопки START
+  span:before, span:after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    height: 1px;
+    background: var(--primaryColor);
+  }
+  span:after {
+    transform: rotate(-35deg);
+    width: 9px;
+    top: -1px;
+    right: 9px;
+  }
+
+  span:before {
+    width: 38px;
+    top: -4px;
+    height: 1px;
+  }
+}
+
+.service_btn__white {
+  color: var(--lightText);
+
+  &:hover {
+    color: #999292
+  }
+}
+
+.service_arrow__white {
+  &:before, &:after {
+    background: var(--lightText)!important;
+  }
+}
+.height {
+  height: 141px;
+}
+
+//стрелка возле кнопки END

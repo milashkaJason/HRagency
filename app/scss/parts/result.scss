@@ -1,0 +1,37 @@
+.result {
+  background: #FBF6F4;
+  padding: 160px 0 160px 0;
+}
+.result_item-ico {
+  position: relative;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 1px solid #D25F15;
+  img {
+    position: absolute;
+    left: 28px;
+    top: 28px;
+  }
+}
+.result_item-title {
+  padding: 34px 0 32px 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+}
+.result_item-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+.result_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--darkText);
+  padding: 53px 0 127px 0;
+  width: 84%;
+}

@@ -1,0 +1,59 @@
+.hereme {
+  padding: 140px 0 0px 0;
+}
+.hereme_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 50px 0 0 0;
+}
+.hereme_input {
+  width: 577px;
+  height: 47px;
+  padding: 0 0 10px 0;
+  border: none;
+  border-bottom: 1px solid #261104;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  margin: 0 0 67px 0;
+  background: var(--lightText);
+  &:hover, &:focus, &:active {
+  outline: none;
+}
+}
+.hereme_checkbox {
+  color: #000000;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+}
+.hereme_btn {
+  width: 197px;
+  height: 47px;
+  background: var(--primaryColor);
+  color: var(--lightText);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  border: none;
+  margin: 0 0 0 67px;
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+}
+.background-light-text {
+  background: var(--lightText);
+}
+.background-padding_hereme {
+  padding: 120px 0 120px 0;
+}
+.background-white {
+  background: #ffffff;
+}

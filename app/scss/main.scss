@@ -1,0 +1,27 @@
+@import 'parts/variables';
+@import 'parts/containers';
+@import 'parts/title';
+@import 'parts/header';
+@import 'parts/hero';
+@import 'parts/about';
+@import 'parts/sevice';
+@import 'parts/rules';
+@import 'parts/prices';
+@import 'parts/hereme';
+@import 'parts/vacancy';
+@import 'parts/result';
+@import 'parts/steps';
+@import 'parts/advantages';
+@import 'parts/faq';
+@import 'parts/test';
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}

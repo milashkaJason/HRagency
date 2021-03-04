@@ -1,0 +1,122 @@
+.vacancy {
+  position: relative;
+  padding: 163px 0 150px 0;
+}
+
+.vacancy_background {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  z-index: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 236px;
+
+  color: #FFF4ED;
+}
+.vacancy_tabs {
+  height: 448px;
+  overflow: auto;
+}
+.vacancy_tabs-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--primaryColor);
+}
+
+.vacancy_tabs-item {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--darkText);
+  padding: 0 0 30px 0;
+  p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #9D9A97;
+    display: none;
+    transition: all ease .4s;
+  }
+  &:hover {
+    color: #F4D7C4;
+    cursor: pointer;
+  }
+}
+
+.vacancy_item-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--darkText);
+}
+
+.vacancy_item-sub-title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #9D9A97;
+}
+
+.vacancy_item-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--darkText);
+}
+
+.vacancy_item {
+  margin: 0 0 35px 0;
+  transition: all ease .4s;
+  border: 1px solid transparent;
+  padding: 5px;
+  &:hover {
+    border: 1px solid #D25F15;
+    cursor: pointer;
+    transition: all ease .4s;
+  }
+}
+.vacancy_line {
+  width: 258px;
+  margin: 20px 0 20px 0px;
+
+}
+.vacancy_btn {
+  width: 192px;
+  height: 48px;
+  background: #D25F15;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--lightText);
+  outline: none;
+  border: none;
+}
+
+//scrollbar
+.vacancy_tabs::-webkit-scrollbar {
+  width: 5px
+}
+//.vacancy_tabs::-webkit-scrollbar-button {
+//  background-color: #666;
+//}
+.vacancy_tabs::-webkit-scrollbar-track {
+  background-color: #CAC5C1;
+}
+//.vacancy_tabs::-webkit-scrollbar-track-piece {
+//  background-color: #ffffff;
+//}
+.vacancy_tabs::-webkit-scrollbar-thumb {
+   background-color: #261104;
+}
+//.vacancy_tabs::-webkit-scrollbar-corner {
+//  background-color: #999;
+//}
+//.vacancy_tabs::-webkit-resizer {
+//  background-color: #666;
+//}
+//scrollbar

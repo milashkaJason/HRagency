@@ -1,0 +1,120 @@
+.advantages {
+  background: #FBF6F4;
+}
+.swiper-container {
+  position: relative;
+}
+.slider-btn-left1, .slider-btn-right1 {
+  z-index: 10;
+  width: 80px;
+  height: 100px;
+  background: var(--darkText);
+  color: var(--lightText);
+  font-size: 30px;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  position: absolute;
+  &:hover, &:focus {
+    outline: none;
+  }
+}
+.slider-btn-left1 {
+  bottom: 0;
+  & span:before, & span:after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: var(--lightText);
+    position: relative;
+  }
+  & span:before {
+    top: 30px;
+    right: -24px;
+    transform: rotate(45deg);
+  }
+  & span:after {
+    top: 16px;
+    right: -4px;
+    transform: rotate(-45deg);
+  }
+}
+.slider-btn-right1 {
+  bottom: 99px;
+  & span:before, & span:after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: var(--lightText);
+    position: relative;
+  }
+  & span:before {
+    top: 30px;
+    right: -24px;
+    transform: rotate(-45deg);
+  }
+  & span:after {
+    top: 16px;
+    right: -4px;
+    transform: rotate(45deg);
+  }
+}
+.advantages_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--darkText);
+  padding: 0 0 40px 0;
+}
+.advantages_title {
+  padding: 160px 0 60px 0;
+}
+.advantages_item-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: inherit;
+}
+.advantages_item-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--darkText);
+}
+.advantages_items {
+  margin: 0 0 45px 88px;
+  list-style: none;
+  color: var(--darkText);
+  &:hover {
+    color: var(--primaryColor);
+    cursor: pointer;
+  }
+  &:hover:before {
+    color: var(--primaryColor);
+  }
+  &:before {
+    display: inline-block;
+    position: relative;
+    top: 43px;
+    left: -69px;
+    font-size: 40px;
+    line-height: 48px;
+    color: #261104;
+  }
+  &:nth-child(1):before {
+    content: '01';
+  }
+  &:nth-child(2):before {
+    content: '02';
+  }
+  &:nth-child(3):before {
+    content: '03';
+  }
+  &:nth-child(4):before {
+    content: '04';
+  }
+}

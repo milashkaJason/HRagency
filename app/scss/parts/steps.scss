@@ -7,7 +7,24 @@
 }
 .steps_title {
   padding: 0 0 95px 0;
+  position: relative;
+  z-index: 0;
 }
+
+.steps_title {
+  &:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    z-index: -1;
+    top: 32px;
+    height: 17px;
+    width: 500px;
+    background: #F4D7C4;
+  }
+}
+
 .steps_item {
 position: relative;
   top: -14px;

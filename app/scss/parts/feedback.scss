@@ -1,0 +1,111 @@
+.feedback {
+  padding: 210px 0 140px 0;
+}
+.feedback_title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--darkText);
+  padding: 18px 0 20px 0;
+  margin: 0;
+}
+.feedback_sub-title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--primaryColor);
+  margin: 0;
+}
+.feedback_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--darkText);
+  padding: 30px 0 22px 0;
+  margin: 0;
+}
+.feedback_link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--primaryColor);
+}
+//btn
+
+
+.feedback_slider-next, .feedback_slider-prev {
+  &:active, &:hover, &:focus {
+    outline: none;
+    border: none;
+  }
+  span {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    position: relative;
+  }
+}
+.feedback_slider-prev span:before, .feedback_slider-next span:before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  background: var(--primaryColor);
+}
+
+
+.feedback_slider-prev span:after, .feedback_slider-next span:after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 15px;
+  top: -4px;
+  height: 1px;
+  background: var(--primaryColor);
+
+}
+.feedback_slider-prev span:after {
+  left: -2px;
+  transform: rotate(-30deg);
+
+}
+.feedback_slider-next span:after{
+  left: 26px;
+  transform: rotate(30deg);
+}
+
+.feedback_slider-prev span:before, .feedback_slider-prev span:after,
+.feedback_slider-next span:before, .feedback_slider-next span:after{
+  z-index: 10;
+}
+.feedback_slider-prev span:hover,
+.feedback_slider-next span:hover{
+  cursor:pointer;
+}
+.feedback_slider-prev {
+  span {
+    top: -166px;
+    left: -100px;
+  }
+}
+.feedback_slider-next {
+  span {
+    top: -166px;
+    left: 100px;
+  }
+}
+//btn
+.feedback_btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--lightText);
+  width: 192px;
+  height: 48px;
+  background: var(--primaryColor);
+  outline: none;
+  border: none;
+  margin: 25px 0 0 0;
+}

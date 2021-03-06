@@ -1,5 +1,5 @@
 .test {
-  padding: 153px 0 160px 0;
+  padding: 153px 0 105px 0;
   background: #FBF6F4;
 }
 .test_text {
@@ -23,4 +23,21 @@
 }
 .test_item {
   padding: 0 80px 64px 0;
+}
+.test_title {
+  position: relative;
+  z-index: 0;
+}
+.test_title {
+  &:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    z-index: -1;
+    top: 30px;
+    height: 17px;
+    width: 566px;
+    background: #F4D7C4;
+  }
 }

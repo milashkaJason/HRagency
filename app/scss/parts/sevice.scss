@@ -85,7 +85,9 @@
     height: 1px;
   }
 }
-
+.text-white {
+  color: var(--lightText);
+}
 .service_btn__white {
   color: var(--lightText);
 
@@ -103,4 +105,9 @@
   height: 141px;
 }
 
+.services500 {
+ position: relative;
+  top: -35px;
+  left: 231px;
+}
 //стрелка возле кнопки END

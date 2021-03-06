@@ -6,7 +6,23 @@
 }
 .about_title {
   margin: 0 0 57px 0;
+  position: relative;
 }
+.about_title {
+  &:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    z-index: -1;
+    top: 32px;
+    height: 17px;
+    width: 440px;
+    background: #F4D7C4;
+  }
+}
+
 .about {
-  padding: 0 0 152px 0;
+  padding: 160px 0 152px 0;
+
 }

@@ -1,0 +1,209 @@
+.btn-trigger {
+  margin: 0 0 300px;
+}
+
+.modal {
+  display: block;
+  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--lightText);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__container {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 80vw;
+  max-height: 100vh;
+  border-radius: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #00449e;
+  box-sizing: border-box;
+}
+
+.modal__close {
+  background: transparent;
+  border: 0;
+}
+
+.modal__header .modal__close:before { content: "\2715"; }
+
+.modal__content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  color: rgba(0,0,0,.8);
+}
+
+/**************************\
+  Demo Animation Style
+\**************************/
+@keyframes mm-fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes mm-slideIn {
+  from { transform: translateY(35%); }
+  to { transform: translateY(0); }
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+  animation: mm-fadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__container {
+  animation: mm-slideIn .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+  will-change: transform;
+}
+
+.modal[aria-hidden='true'] {
+  display: none;
+}
+.modal_input {
+  width: 577px;
+  //height: auto;
+  resize: none;
+  padding: 0 0 10px 0;
+  border: none;
+  border-bottom: 1px solid #261104;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  margin: 0 0 67px 0;
+  background: transparent;
+  &:hover, &:focus, &:active {
+    outline: none;
+  }
+}
+.modal_checkbox {
+  color: #000000;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+}
+.modal__btn {
+  width: 197px;
+  height: 47px;
+  background: var(--primaryColor);
+  color: var(--lightText);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  border: none;
+  margin: 0 0 0 67px;
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+}
+.modal_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 50px 0 0 0;
+}
+.modal_title {
+  position: relative;
+  z-index: 0;
+  padding: 0 0 70px 0;
+}
+.modal_title {
+  &:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    z-index: -1;
+    top: 32px;
+    height: 17px;
+    width: 380px;
+    background: #F4D7C4;
+  }
+}
+/* прячем чекбокс*/
+input[type="checkbox"] {
+  display: none;
+}
+
+/* стили для метки */
+label {
+  color: #000;
+  cursor: default;
+  font-weight: normal;
+  line-height: 30px;
+  padding: 10px 0;
+  vertical-align: middle;
+}
+
+/* формируем внешний вид чекбокса в псевдоэлементе before */
+label:before {
+  content: " ";
+  padding: 11px;
+  color: #000;
+  display: inline-block;
+  font: 20px/30px Arial;
+  margin-right: 15px;
+  position: relative;
+  text-align: center;
+  text-indent: 0px;
+  width: 20px;
+  height: 20px;
+  background: #FFF;
+  border: 1px solid #261104;
+  border-image: initial;
+  vertical-align: middle;
+}
+
+/* вариации внешнего вида в зав-ти от статуса checkbox */
+/* checked */
+input:checked + label:before {
+  content: "";
+  padding: 11px;
+  background: url("../../images/chexkbox.svg");
+}
+/* disabled */
+input:disabled + label:before {
+  background: #eee;
+  padding: 11px;
+  color: #aaa;
+}
+.valid {
+  border-bottom: 1px solid #261104;
+}
+.invalid {
+  border-bottom: 1px solid red;
+}

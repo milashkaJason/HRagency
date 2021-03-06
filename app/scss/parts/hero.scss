@@ -1,5 +1,5 @@
 .hero {
-  padding: 0 0 160px 0;
+  background: var(--lightText);
 }
 .hero_title {
   font-weight: bold;
@@ -90,6 +90,6 @@ background: var(--primaryColor);
   }
 }
 //описание кнопки на слайдере end
-.swiper-slide img {
+.hero_swiper-slide img {
   width: 100%;
 }

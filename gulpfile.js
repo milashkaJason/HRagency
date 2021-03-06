@@ -37,6 +37,16 @@ function scripts() {
         'app/js/app.js', // Пользовательские скрипты, использующие библиотеку, должны быть подключены в конце
     ])
         .pipe(concat('app.min.js')) // Конкатенируем в один файл
+        // .pipe(uglify()) // Сжимаем JavaScript
+        .pipe(dest('app/js/')) // Выгружаем готовый файл в папку назначения
+        .pipe(browserSync.stream()) // Триггерим Browsersync для обновления страницы
+}
+function scriptsBuild() {
+    return src([ // Берём файлы из источников
+        // 'app/js/lib/app.carouselSlider.min.js', // Пример подключения библиотеки
+        'app/js/app.js', // Пользовательские скрипты, использующие библиотеку, должны быть подключены в конце
+    ])
+        .pipe(concat('app.min.js')) // Конкатенируем в один файл
         .pipe(uglify()) // Сжимаем JavaScript
         .pipe(dest('app/js/')) // Выгружаем готовый файл в папку назначения
         .pipe(browserSync.stream()) // Триггерим Browsersync для обновления страницы
@@ -54,6 +64,15 @@ function startwatch() {
     watch('app/images/src/**/*', images);
 }
 function styles() {
+    return src('app/' + preprocessor + '/main.' + preprocessor + '') // Выбираем источник: "app/scss/main.scss" или "app/less/main.less"
+        .pipe(eval('sass')()) // Преобразуем значение переменной "preprocessor" в функцию
+        .pipe(concat('app.min.css')) // Конкатенируем в файл app.min.js
+        .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true })) // Создадим префиксы с помощью Autoprefixer
+        // .pipe(cleancss( { level: { 1: { specialComments: 0 } }/* , format: 'beautify' */ } )) // Минифицируем стили
+        .pipe(dest('app/css/')) // Выгрузим результат в папку "app/css/"
+        .pipe(browserSync.stream()) // Сделаем инъекцию в браузер
+}
+function stylesBuild() {
     return src('app/' + preprocessor + '/main.' + preprocessor + '') // Выбираем источник: "app/scss/main.scss" или "app/less/main.less"
         .pipe(eval('sass')()) // Преобразуем значение переменной "preprocessor" в функцию
         .pipe(concat('app.min.css')) // Конкатенируем в файл app.min.js
@@ -99,6 +118,6 @@ exports.images = images;
 // Экспортируем функцию cleanimg() как таск cleanimg
 exports.cleanimg = cleanimg;
 // Создаём новый таск "build", который последовательно выполняет нужные операции
-exports.build = series(cleandist, styles, scripts, images, buildcopy);
+exports.build = series(cleandist, stylesBuild, scriptsBuild, images, buildcopy);
 // Экспортируем дефолтный таск с нужным набором функций
 exports.default = parallel(styles, scripts, browsersync, startwatch);

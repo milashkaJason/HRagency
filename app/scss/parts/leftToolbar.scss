@@ -1,0 +1,42 @@
+.leftToolbar {
+  border-right: 1px solid #261104;;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 103px;
+  height: 100vh;
+}
+.leftToolbar i {
+  display: flex;
+  margin: 0 0 4vh 0;
+  transition: all ease .3s;
+  &:hover {
+    cursor: pointer;
+    color: var(--primaryColor);
+    transition: all ease .3s;
+  }
+&:first-child {
+  margin: 0 0 4vh 0;
+}
+  &:before {
+    margin: 0 auto;
+  }
+}
+.leftToolbar div  {
+  margin: 40vh auto 30vh auto;
+ & p{
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 24px;
+   text-align: center;
+   color: #261104;
+   height: 20px;
+   transform: rotate(270deg);
+   transition: all ease .3s;
+   &:hover {
+     cursor: pointer;
+     color: var(--primaryColor);
+     transition: all ease .3s;
+   }
+ }
+}

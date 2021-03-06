@@ -1,0 +1,62 @@
+.buttDark {
+  position: relative;
+  transition: .5s;
+  overflow: hidden;
+  z-index: 5;
+  &:active, &:focus,&:hover {
+    outline: none;
+    border: none;
+  }
+}
+.buttDark:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.buttOrange {
+  position: relative;
+  transition: .5s;
+  overflow: hidden;
+  z-index: 5;
+  &:active, &:focus,&:hover {
+    outline: none;
+    border: none;
+  }
+}
+.buttOrange:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.pulse {
+  background-color: var(--darkText);
+  border-radius: 50%;
+  animation: pulse .7s ease-out;
+  transform: scale(0);
+  position: absolute;
+  opacity: 0.5;
+}
+.newBackground {
+  transition: all ease .9s;
+  color: var(--lightText);
+  background-color: var(--darkText);
+}
+.pulseOrange {
+  background-color: var(--primaryColor);
+  border-radius: 50%;
+  animation: pulse .7s ease-out;
+  transform: scale(0);
+  position: absolute;
+  opacity: 0.8;
+}
+.newBackgroundOrange {
+  transition: all ease .9s;
+  color: var(--lightText);
+  background-color: var(--primaryColor);
+}
+@keyframes pulse {
+  to {
+    transform: scale(2);
+    //background-color: #fff;
+    //opacity: 0;
+  }
+}
+

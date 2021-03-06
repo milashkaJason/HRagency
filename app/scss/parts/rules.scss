@@ -1,6 +1,23 @@
 .rules {
   padding: 170px 0 152px 0;
 }
+.rules_title {
+  margin: 0 0 57px 0;
+  position: relative;
+}
+.rules_title {
+  &:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    z-index: -1;
+    top: 32px;
+    height: 17px;
+    width: 240px;
+    background: #F4D7C4;
+  }
+}
 .rules_link {
   position: absolute;
   //margin: 50px 0 0 0;

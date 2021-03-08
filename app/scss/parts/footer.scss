@@ -5,6 +5,8 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
+  position: relative;
+  z-index: 2;
 }
 .footer_left {
 
@@ -34,6 +36,12 @@
 .footer_center-item {
   list-style: none;
   padding: 10px 0 10px 0;
+  transition: all ease .2s;
+  &:hover {
+    cursor: pointer;
+    color: var(--primaryColor);
+    transition: all ease .2s;
+  }
 }
 .footer_right-list {
   padding: 100px 0 0 0;
@@ -41,7 +49,11 @@
 .footer_right-item {
   list-style: none;
  padding: 10px 0 10px 0;
-
+  &:hover {
+    cursor: pointer;
+    color: var(--primaryColor);
+    transition: all ease .2s;
+  }
 }
 .footer_line {
   border-bottom: 1px solid #FFFFFF;
@@ -66,4 +78,9 @@ padding: 40px 0 0 0;
   line-height: 150%;
   color: #FFFFFF;
   text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    color: var(--primaryColor);
+    transition: all ease .2s;
+  }
 }

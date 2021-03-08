@@ -1,5 +1,6 @@
 .header {
   background: var(--lightText);
+  padding: 15px 0 0 25px;
 }
 .header_menu {
   display: flex;
@@ -53,4 +54,34 @@
   position: absolute;
   outline: none;
   transition: all ease .1s;
+}
+.menu-burger {
+  & span {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background: black;
+    &:after {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 3px;
+      background: black;
+      top: -11px;
+    }
+    &:before {
+      display: inline-block;
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 3px;
+      background: black;
+      top: -23px;
+    }
+  }
+}
+.d-nonen {
+  display: none!important;
 }

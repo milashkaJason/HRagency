@@ -17,6 +17,7 @@ const swiperHero = new Swiper('.hero_swiper-container', {
 const swiperFeedback = new Swiper('.feedback_swiper-container', {
     loop: true,
     spaceBetween: 20,
+    slidesPerView: 'auto',
     navigation: {
         nextEl: '.feedback_slider-next',
         prevEl: '.feedback_slider-prev',
@@ -29,6 +30,17 @@ const galleryThumbs = new Swiper('.gallery-thumbs', {
     freeMode: false,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
+    breakpoints: {
+        // when window width is >= 320px
+        1023: {
+            slidesPerView: 4,
+            spaceBetween: 10
+        },
+    //     1345: {
+    //         slidesPerView: 4,
+    //         spaceBetween: 20
+    //     },
+    }
 });
 const galleryTop = new Swiper('.gallery-top', {
     spaceBetween: 40,
@@ -42,6 +54,19 @@ const galleryTop = new Swiper('.gallery-top', {
 });
 MicroModal.init();
 //............................поиск
+function serchfunk() {
+    if(window.innerWidth<1228) {
+        let lope = document.querySelector('.header_lope')
+        lope.style.top = `0px`;
+        lope.style.left = `8px`;
+        lope.style.transform = `scale(1.5)`;
+        let searchinp = document.querySelectorAll('.header_menu-item')[7].firstChild.nextSibling
+        searchinp.style.width = `0px`
+
+    }
+}
+serchfunk()
+window.addEventListener('resize', serchfunk)
 let headerSearch = document.querySelector('.header_search')
 let headerMenuItemD = document.querySelectorAll('.header_menu-item-d')
 let headerLope = document.querySelector('.header_lope')
@@ -49,6 +74,7 @@ let headerLope = document.querySelector('.header_lope')
 headerSearch.addEventListener('click', function () {
     let currentWidth = window.innerWidth;
     let style = document.createElement('style');
+    console.log()
     style.textContent = `
     .activeInput {
     width: ${currentWidth / 2}px;
@@ -57,14 +83,26 @@ headerSearch.addEventListener('click', function () {
     left: ${currentWidth / 2 - 10}px;
     }
     `
-    headerMenuItemD.forEach(l => l.classList.add('d-none'))
+    headerMenuItemD.forEach(l => l.classList.add('d-nonen'))
     document.head.appendChild(style)
     headerSearch.classList.add('activeInput')
     headerLope.classList.add('activeIcoSearch')
 })
 headerLope.addEventListener('click', function () {
+    let currentWidth = window.innerWidth;
+    let style = document.createElement('style');
+    console.log(currentWidth)
+    style.textContent = `
+    .activeInput {
+    width: ${currentWidth / 2}px!important;
+    }
+    .activeIcoSearch {
+    left: ${currentWidth / 2 - 10}px!important;
+    }
+    `
+    document.head.appendChild(style)
     headerSearch.classList.toggle('activeInput')
-    headerMenuItemD.forEach(l => l.classList.toggle('d-none'))
+    headerMenuItemD.forEach(l => l.classList.toggle('d-nonen'))
     headerSearch.value = ''
     headerLope.classList.toggle('activeIcoSearch')
 
@@ -72,13 +110,13 @@ headerLope.addEventListener('click', function () {
 document.querySelector('.header_menu-item-search').addEventListener('keydown', function (e) {
     if (e.keyCode === 13) {
         headerSearch.classList.remove('activeInput');
-        headerMenuItemD.forEach(l => l.classList.remove('d-none'))
+        headerMenuItemD.forEach(l => l.classList.remove('d-nonen'))
         headerSearch.value = ''
         headerLope.classList.remove('activeIcoSearch')
     }
 })
 document.querySelector('.hero').addEventListener('click', function () {
-    headerMenuItemD.forEach(l => l.classList.remove('d-none'))
+    headerMenuItemD.forEach(l => l.classList.remove('d-nonen'))
     headerSearch.classList.remove('activeInput')
     headerLope.classList.remove('activeIcoSearch')
 })
@@ -145,3 +183,14 @@ function removeElementO(e) {
 
 //.......................валидация формы
 //.......................валидация формы
+
+
+//.......................menu burger
+
+document.querySelector('.menu-burger').addEventListener('click', showMenu)
+function showMenu () {
+    document.querySelector('.menu').classList.toggle('menu-display')
+    document.body.classList.toggle('body-overflow')
+}
+
+//.......................menu burger

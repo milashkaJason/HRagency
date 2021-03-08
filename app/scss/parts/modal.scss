@@ -13,7 +13,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--lightText);
+  background: rgba(00,00,00,.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,4 +206,10 @@ input:disabled + label:before {
 }
 .invalid {
   border-bottom: 1px solid red;
+}
+.userName:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+.userName:valid:not(:placeholder-shown) {
+  border-color: black;
 }

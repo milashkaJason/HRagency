@@ -24,7 +24,7 @@
 
 <!--leftToolbar START-->
 
-<div class="leftToolbar">
+<div class="leftToolbar d-none d-lg-block">
     <div>
         <p class="leftToolBar_text">
             <nobr>ОФОРМИТЬ ЗАЯВКУ</nobr>
@@ -37,6 +37,34 @@
 
 <!--leftToolbar START-->
 
+<!--menu START-->
+
+<div class="menu menu-display ">
+    <ul class="menu-items text-center">
+        <li class="menu-item">
+            <a href="">Услуги</a>
+        </li>
+        <li class="menu-item">
+            <a href="">Вакансии</a>
+        </li>
+        <li class="menu-item">
+            <a href="">Инфоцентр</a>
+        </li>
+        <li class="menu-item">
+            <a href="">О компании</a>
+        </li>
+        <li class="menu-item">
+            <a href="">Контакты</a>
+        </li>
+        <li class="menu-item header_menu-item-search">
+            <input class="header_search header_search-menu" type="text">
+            <img class="header_lope" src="images/loupe.svg" alt="">
+        </li>
+    </ul>
+</div>
+
+<!--menu START-->
+
 <!--header START-->
 
 <header class="header">
@@ -48,25 +76,29 @@
             <li class="header_menu-item">
                 <a href="">+ 375 (44) 777 - 29 - 35</a>
             </li>
-            <li class="header_menu-item header_menu-item-d">
+            <li class="header_menu-item header_menu-item-d d-none d-lg-block">
                 <a href="">Услуги</a>
             </li>
-            <li class="header_menu-item header_menu-item-d">
+            <li class="header_menu-item header_menu-item-d d-none d-lg-block">
                 <a href="">Вакансии</a>
             </li>
-            <li class="header_menu-item header_menu-item-d ">
+            <li class="header_menu-item header_menu-item-d d-none d-lg-block">
                 <a href="">Инфоцентр</a>
             </li>
-            <li class="header_menu-item header_menu-item-d ">
+            <li class="header_menu-item header_menu-item-d d-none d-lg-block">
                 <a href="">О компании</a>
             </li>
-            <li class="header_menu-item header_menu-item-d ">
+            <li class="header_menu-item header_menu-item-d d-none d-lg-block">
                 <a href="">Контакты</a>
             </li>
-            <li class="header_menu-item header_menu-item-search">
+            <li class="header_menu-item header_menu-item-search d-none d-lg-block">
                 <input class="header_search" type="text">
                 <img class="header_lope" src="images/loupe.svg" alt="">
             </li>
+            <li class="header_menu-item menu-burger d-block d-lg-none">
+                <span></span>
+            </li>
+
         </ul>
     </div>
 </header>
@@ -78,13 +110,13 @@
 <div class="hero">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 d-none d-md-block">
                 <h1 class="hero_title">Кадровое агентство</h1>
                 <p class="hero_sub-title">Наше профессиональное агентство кадров полного цикла предоставит комплекс
                     услуг по подбору и управлению кадрами, включая HR-брендинг, консалтинг и другие смежные услуги.</p>
                 <button data-micromodal-trigger="modal-1" class="buttDark hero_btn">консультация</button>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6 col-sm-12">
                 <div class="swiper-container hero_swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide hero_swiper-slide"><img src="images/heroSliderImg1.png" alt=""></div>
@@ -92,8 +124,14 @@
                         <div class="swiper-slide hero_swiper-slide"><img src="images/heroSliderImg3.png" alt=""></div>
                     </div>
                 </div>
-                <div class="slider-btn-left"><span></span></div>
-                <div class="slider-btn-right"><span></span></div>
+                <div class="slider-btn-left d-none d-lg-block"><span></span></div>
+                <div class="slider-btn-right d-none d-lg-block"><span></span></div>
+            </div>
+            <div class="col-sm-12 d-block d-md-none">
+                <h1 class="hero_title">Кадровое агентство</h1>
+                <p class="hero_sub-title">Наше профессиональное агентство кадров полного цикла предоставит комплекс
+                    услуг по подбору и управлению кадрами, включая HR-брендинг, консалтинг и другие смежные услуги.</p>
+                <button data-micromodal-trigger="modal-1" class="buttDark hero_btn">консультация</button>
             </div>
         </div>
     </div>
@@ -109,14 +147,14 @@
             <div class="col-sm-12">
                 <h2 class="title about_title">О нашем агентстве</h2>
             </div>
-            <div class="col-sm-5 offset-sm-1">
+            <div class="col-sm-12 col-md-5 offset-md-1">
                 <p class="about_description">Успех любого дела определяется <b>креативностью</b>, профессионализмом,
                     мотивированностью тех, кто над ним работает. Это одинаково применимо к творческим коллективам,
                     персоналу коммерческой фирмы, членам некоммерческих групп и инициатив. Любую компанию создают люди,
                     поэтому грамотная кадровая политика в существенной степени определяет итоговую результативность
                     бизнес-проекта.</p>
             </div>
-            <div class="col-sm-5 offset-sm-1">
+            <div class="col-sm-12 col-md-5 offset-md-1">
                 <p class="about_description">В нашей команде только опытные эксперты, реализовавшие немало
                     разноплановых проектов в HR-рекрутинге. Хотите получить профессиональные ка дровые услуги быстро и
                     по разумной цене? Тогда заполняйте специальную форму на нашем сайте, и мы свяжемся с Вами в удобное
@@ -135,7 +173,7 @@
 <div class="service">
     <div class="full-container">
         <div class="row">
-            <div class="col-sm-4 p-0">
+            <div class="col-lg-4 col-md-6 col-sm-12 p-0">
                 <div class="service_block service_block__black">
                     <h2 class="text-white title service_title service_title1">Наши услуги</h2>
                     <p class="text-white service_text">Наше кадровое агентство — компания полного цикла. Мы
@@ -143,7 +181,7 @@
                         заказчикам все виды услуг HR, среди которых:</p>
                 </div>
             </div>
-            <div class="col-sm-4 p-0">
+            <div class="col-lg-4 col-md-6 col-sm-12 p-0">
                 <div class="service_block service_block__white">
                     <h2 class="title service_title">Подбор персонала</h2>
                     <p class="service_text">Наша рекрутинговая компания подбирает для заказчиков кадры необходимого
@@ -154,7 +192,7 @@
                     <a href="#" class="service_btn">Связаться <span></span></a>
                 </div>
             </div>
-            <div class="col-sm-4 p-0">
+            <div class="col-lg-4 col-md-6 col-sm-12 p-0">
                 <div class="service_block service_block__orange">
                     <h2 class="text-white title service_title">HR-брендинг</h2>
                     <p class="text-white service_text">Формирование с нуля бренда работодателя на рынке труда. Это
@@ -165,7 +203,7 @@
                             class="service_arrow__white"></span></a>
                 </div>
             </div>
-            <div class="col-sm-4 p-0">
+            <div class="col-lg-4 col-md-6 col-sm-12 p-0">
                 <div class="service_block service_block__light-orange">
                     <h2 class="text-white title service_title">HR-консалтинг</h2>
                     <p class="text-white service_text">Оптимизация алгоритмов работы с кадрами ощутимо увеличивает
@@ -177,7 +215,7 @@
                             class="service_arrow__white"></span></a>
                 </div>
             </div>
-            <div class="col-sm-4 p-0">
+            <div class="col-lg-4 col-md-6 col-sm-12 p-0">
                 <div class="service_block service_block__pink">
                     <h2 class="title service_title">Кадровый аутсорсинг</h2>
                     <p class="service_text">Никто не справится с ведением кадровой работы лучше, чем профессиональная
@@ -187,7 +225,7 @@
                     <a href="#" class="service_btn">Связаться <span></span></a>
                 </div>
             </div>
-            <div class="col-sm-4 p-0">
+            <div class="col-lg-4 col-md-6 col-sm-12 p-0">
                 <div class="service_block service_block__transparent">
                     <img class="services500" src="images/500.svg" alt="">
                     <h2 class="title service_title"></h2>
@@ -208,13 +246,13 @@
 <div class="rules">
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-md-5 col-lg-3">
                 <h2 class="title rules_title">Принципы работы</h2>
                 <p class="rules_text">Залогом успеха нашего HR-агентства на рынке кадровых услуг стало следование двум
                     основополагающим принципам:</p>
                 <button data-micromodal-trigger="modal-1" class="buttOrange rules_btn">консультация</button>
             </div>
-            <div class="col-sm-4 offset-sm-1">
+            <div class="col-md-6 col-lg-4 offset-lg-1">
                 <div class="rules_ellipse">
                     <img src="images/ruelsVennDiagram.svg" alt="">
                 </div>
@@ -224,9 +262,9 @@
                     раз убеждались на практике, что только комплексный пересмотр и оптимизация кадровой работы на всех
                     уровнях организации способны дать стойкий эффект в виде построения стойкой кадровой структуры,
                     снижения текучести кадров, повышения лояльности сотрудников.</p>
-                <a href="#" class="rules_link">Связаться <span></span></a>
+                <a href="#" class="rules_link">Узнать больше<span></span></a>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-6 col-lg-4 offset-md-5">
                 <div class="rules_ellipse">
                     <img src="images/rulesArrow.svg" alt="">
                 </div>
@@ -234,7 +272,7 @@
                 <p class="rules_second-text">Мы отдаем приоритет проработке максимально выгодного подхода к
                     использованию потенциала сотрудников фирмы-заказчика. Поэтому делаем ставку на подбор эффективных
                     работников, которые разделяют ценности компании.</p>
-                <a href="#" class="rules_link">Связаться <span></span></a>
+                <a href="#" class="rules_link">Узнать больше<span></span></a>
             </div>
         </div>
     </div>
@@ -250,11 +288,11 @@
             <div class="col-sm-12">
                 <h2 class="title prices_title">Стоимость зависит от</h2>
             </div>
-            <div class="col-sm-5 offset-sm-1">
+            <div class="col-sm-12 col-md-5 offset-sm-1">
                 <p class="prices_text">Наше кадровое агентство определяет стоимость услуг индивидуально для каждого
                     проекта. Конечная цена зависит от нескольких обстоятельств:</p>
             </div>
-            <div class="col-sm-5 offset-sm-1">
+            <div class="col-sm-12 col-sm-5 offset-sm-1">
                 <p class="prices_text">Чтобы получить бесплатный расчет стоимость или консультацию наших специалистов по
                     поводу интересующих кадровых услуг, отправьте свою заявку через форму обратной связи на сайте или
                     позвоните по указанному там же телефону. Мы максимально быстро сориентируем Вас по расценкам и
@@ -263,25 +301,25 @@
         </div>
         <div class="services_end-block">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-md-6 col-lg-3 services_end-block-item">
                     <div class="background-white height">
                         <img src="images/servicesImg1.svg" alt="">
                         <p class="services_end-block-text">Набора необходимых заказчику HR-услуг;</p>
                     </div>
                 </div>
-                <div class="col-sm-3 ">
+                <div class="col-md-6 col-lg-3 services_end-block-item ">
                     <div class="background-white height">
                         <img src="images/servicesImg2.svg" alt="">
                         <p class="services_end-block-text">Сроков исполнения;</p>
                     </div>
                 </div>
-                <div class="col-sm-3 ">
+                <div class="col-md-6 col-lg-3 services_end-block-item ">
                     <div class="background-white height">
                         <img src="images/servicesImg3.svg" alt="">
                         <p class="services_end-block-text">Численности штата компании;</p>
                     </div>
                 </div>
-                <div class="col-sm-3 ">
+                <div class="col-md-6 col-lg-3 services_end-block-item ">
                     <div class="background-white height">
                         <img src="images/servicesImg4.svg" alt="">
                         <p class="services_end-block-text">Отраслевых особенностей фирмы.</p>
@@ -299,17 +337,18 @@
 <div class="hereme">
     <div class="container background-padding_hereme background-light-text">
         <div class="row">
-            <div class="offset-sm-1 col-sm-3">
+            <div class="col-sm-12 offset-md-1 col-md-3">
                 <h2 class="title hereme_title">Свяжитесь с нами</h2>
                 <p class="hereme_text">Отправьте нам свою заявку, и мы свяжемся с вами.</p>
             </div>
-            <div class="offset-sm-1 col-sm-7">
+            <div class="col-sm-12 offset-md-1 col-md-7">
                 <input class="hereme_input" placeholder="Имя *" type="text"><br>
                 <input class="hereme_input" placeholder="E-mail *" type="text"><br>
                 <input class="hereme_input" placeholder="Телефон *" type="text"><br>
                 <input class="hereme_input" placeholder="Сообщение" type="text"><br>
-                <input class="hereme_checkbox" placeholder="" type="checkbox">
-                <span class="hereme_checkbox-text">Я согласен на обработку данных *</span>
+                <input name="galochka" id="checkbox-id1" class="modal_checkbox" placeholder="" type="checkbox">
+                <label for="checkbox-id1"></label>
+                <span class="modal_checkbox-text">Я согласен на обработку данных *</span>
                 <button class="buttDark hereme_btn">отправить</button>
             </div>
         </div>
@@ -374,11 +413,11 @@
 <div class="result">
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-md-6 col-lg-4">
                 <h2 class="result_title title">Гарантируем результат</h2>
                 <p class="result_text">Нас выбирают, потому что мы гарантируем необходимый результат за счет:</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="result_item-ico">
                     <img src="images/resultimg1.svg" alt="">
                 </div>
@@ -386,7 +425,7 @@
                 <p class="result_item-text">Многотысячной базе кандидатов как внутри страны, так и за рубежом, включая
                     резюме, которых нет в открытых интернет-источниках.</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="result_item-ico">
                     <img src="images/resultimg2.svg" alt="">
                 </div>
@@ -394,14 +433,14 @@
                 <p class="result_item-text">Тысячи успешно закрытых вакансий для компаний из самых разнообразных
                     отраслей.</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="result_item-ico">
                     <img src="images/resultimg3.svg" alt="">
                 </div>
                 <h4 class="result_item-title">Оперативность</h4>
                 <p class="result_item-text">Оперативные сроки подбора сотрудников.</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="result_item-ico">
                     <img src="images/resultimg4.svg" alt="">
                 </div>
@@ -409,7 +448,7 @@
                 <p class="result_item-text">Более 90% подобранных кандидатов работают в штате компаний-заказчиков до сих
                     пор.</p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="result_item-ico">
                     <img src="images/resultimg5.svg" alt="">
                 </div>
@@ -432,29 +471,33 @@
             </div>
             <div class="col-sm-12 steps_line">
             </div>
-            <div class="col-sm-2 steps_item">
+            <div class="col-md-3 col-lg-2 steps_item">
                 <span></span>
                 <p class="steps_step">Отправка обращения</p>
             </div>
-            <div class="col-sm-2 steps_item">
+            <div class="col-md-3 col-lg-2 steps_item">
                 <span></span>
                 <p class="steps_step">Встреча в офисе</p>
             </div>
-            <div class="col-sm-2 steps_item">
+            <div class="col-md-3 col-lg-2 steps_item">
                 <span></span>
                 <p class="steps_step">Составление портрета</p>
             </div>
-            <div class="col-sm-2 steps_item">
+            <div class="col-md-3 col-lg-2 steps_item">
                 <span></span>
                 <p class="steps_step">Поиск и анализ</p>
             </div>
-            <div class="col-sm-2 steps_item">
+            <div class="col-md-3 col-lg-2 steps_item">
                 <span></span>
                 <p class="steps_step">Собеседование и выбор</p>
             </div>
-            <div class="col-sm-2 steps_item">
+            <div class="col-md-3 col-lg-2 steps_item">
                 <span></span>
                 <p class="steps_step">Найм кандидата</p>
+            </div>
+            <div class="col-md-3 col-lg-0">
+            </div>
+            <div class="col-md-3 col-lg-0">
             </div>
             <div class="col-sm-3">
                 <div class="steps_ind">
@@ -513,7 +556,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-5 offset-sm-1">
+            <div class="col-lg-5 offset-lg-1 col-md-6 offset-md-0">
                 <!-- Slider main container -->
                 <div class="swiper-container advantages_swiper-container">
                     <!-- Additional required wrapper -->
@@ -528,8 +571,8 @@
 
                     </div>
                     <!-- If we need navigation buttons -->
-                    <div class="slider-btn-left1"><span></span></div>
-                    <div class="slider-btn-right1"><span></span></div>
+                    <div class="slider-btn-left1 d-none d-lg-block"><span></span></div>
+                    <div class="slider-btn-right1 d-none d-lg-block"><span></span></div>
 
                 </div>
             </div>
@@ -545,35 +588,35 @@
     <div class="container">
         <div class="faq_background">Частые вопросы</div>
         <div class="row">
-            <div class="col-sm-3 text-center faq_box">
+            <div class="col-xl-3 col-lg-6 col-md-5 offset-md-1 offset-lg-0 faq_box">
                 <img src="images/faq1.svg" alt="">
                 <p class="faq_text">Как подобрать подходящую вакансию? Как подобрать подходящую вакансию?</p>
             </div>
-            <div class="col-sm-3 text-center faq_box">
+            <div class="col-xl-3 col-lg-6 col-md-5 offset-md-1 offset-lg-0 faq_box">
                 <img src="images/faq2.svg" alt="">
                 <p class="faq_text">Как подобрать подходящую вакансию? Как подобрать подходящую вакансию?</p>
             </div>
-            <div class="col-sm-3 text-center faq_box">
+            <div class="col-xl-3 col-lg-6 col-md-5 offset-md-1 offset-lg-0 faq_box">
                 <img src="images/faq3.svg" alt="">
                 <p class="faq_text">Как подобрать подходящую вакансию? Как подобрать подходящую вакансию?</p>
             </div>
-            <div class="col-sm-3 text-center faq_box">
+            <div class="col-xl-3 col-lg-6 col-md-5 offset-md-1 offset-lg-0 faq_box">
                 <img src="images/faq4.svg" alt="">
                 <p class="faq_text">Как подобрать подходящую вакансию? Как подобрать подходящую вакансию?</p>
             </div>
-            <div class="col-sm-3 text-center faq_box">
+            <div class="col-xl-3 col-lg-6 col-md-5 offset-md-1 offset-lg-0 faq_box">
                 <img src="images/faq5.svg" alt="">
                 <p class="faq_text">Как подобрать подходящую вакансию? Как подобрать подходящую вакансию?</p>
             </div>
-            <div class="col-sm-3 text-center faq_box">
+            <div class="col-xl-3 col-lg-6 col-md-5 offset-md-1 offset-lg-0 faq_box">
                 <img src="images/faq6.svg" alt="">
                 <p class="faq_text">Как подобрать подходящую вакансию? Как подобрать подходящую вакансию?</p>
             </div>
-            <div class="col-sm-3 text-center faq_box">
+            <div class="col-xl-3 col-lg-6 col-md-5 offset-md-1 offset-lg-0 faq_box">
                 <img src="images/faq7.svg" alt="">
                 <p class="faq_text">Как подобрать подходящую вакансию? Как подобрать подходящую вакансию?</p>
             </div>
-            <div class="col-sm-3 text-center faq_box">
+            <div class="col-xl-3 col-lg-6 col-md-5 offset-md-1 offset-lg-0 faq_box">
                 <img src="images/faq8.svg" alt="">
                 <p class="faq_text">Как подобрать подходящую вакансию? Как подобрать подходящую вакансию?</p>
             </div>
@@ -683,8 +726,8 @@
                 </div>
             </div>
             <div class="col-sm-12 d-flex justify-content-between p-0">
-                <div class="people_slider-prev"><span></span></div>
-                <div class="people_slider-next"><span></span></div>
+                <div class="people_slider-prev d-none d-lg-block"><span></span></div>
+                <div class="people_slider-next d-none d-lg-block"><span></span></div>
             </div>
             <div class="swiper-container gallery-top">
                 <div class="swiper-wrapper">
@@ -768,13 +811,13 @@
             <div class="col-sm-12">
                 <h2 class="title news_title">Новости и статьи</h2>
             </div>
-            <div class="col-sm-6">
+            <div class="col-lg-6 col-md-12">
                 <div class="news_item">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-xl-4 col-lg-5 col-md-4">
                             <img src="images/newsimg1.png" alt="">
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-xl-8 col-lg-7 col-md-8">
                             <h4 class="news_item-title">Как зарабатывать больше?</h4>
                             <h5 class="news_item-date">29/12/2020</h5>
                             <p class="news_item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
@@ -784,13 +827,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-lg-6 col-md-12">
                 <div class="news_item">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-xl-4 col-lg-5 col-md-4">
                             <img src="images/newsimg1.png" alt="">
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-xl-8 col-lg-7 col-md-8">
                             <h4 class="news_item-title">Как зарабатывать больше?</h4>
                             <h5 class="news_item-date">29/12/2020</h5>
                             <p class="news_item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
@@ -800,13 +843,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-lg-6 col-md-12">
                 <div class="news_item">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-xl-4 col-lg-5 col-md-4">
                             <img src="images/newsimg1.png" alt="">
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-xl-8 col-lg-7 col-md-8">
                             <h4 class="news_item-title">Как зарабатывать больше?</h4>
                             <h5 class="news_item-date">29/12/2020</h5>
                             <p class="news_item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
@@ -816,7 +859,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 offset-sm-2">
+            <div class="col-lg-4 col-md-12 offset-lg-2">
                 <div class="news_learn-more">
                     <h4 class="news_learn-more-title">Хотите больше интересных статей? </h4>
                     <button class="buttOrange news_learn-more-btn">ПОСМОТРЕТЬ БЛОГ</button>
@@ -833,16 +876,16 @@
 <div class="feedback">
     <div class="container">
         <div class="row">
-            <div class="col-sm-10 offset-sm-1">
+            <div class=" col-md-12 col-lg-10 offset-lg-1">
                 <div class="swiper-container feedback_swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide widthslide">
                             <div class="row">
-                                <div class="col-sm-4 p-0">
+                                <div class="col-md-4 col-lg-5 photo_feedback">
                                     <img src="images/feedback.png" alt="">
 
                                 </div>
-                                <div class="col-sm-8 p-0">
+                                <div class="col-md-8 col-lg-7">
                                     <h4 class="feedback_title">Екатерина Егорова</h4>
                                     <p class="feedback_sub-title">ООО “ БПМ Клауд”</p>
                                     <p class="feedback_text">Благодарим кадровое агентство Hrbel.by за оказание услуг по
@@ -855,32 +898,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide widthslide">
                             <div class="row">
-                                <div class="col-sm-4 p-0">
+                                <div class="col-md-4 col-lg-5 photo_feedback">
                                     <img src="images/feedback.png" alt="">
 
                                 </div>
-                                <div class="col-sm-8 p-0">
-                                    <h4 class="feedback_title">Екатерина Егорова</h4>
-                                    <p class="feedback_sub-title">ООО “ БПМ Клауд”</p>
-                                    <p class="feedback_text">Благодарим кадровое агентство Hrbel.by за оказание услуг по
-                                        подбору персонала для нашей компании. В процессе сотрудничества работники
-                                        Hrbel.by помогли нам найти подходящих кандидатов сразу по нескольким вакансиям с
-                                        нестандартными требованиям. Мы искали в свою команду сотрудников по
-                                        IT-специальностям и финансовому профилю. Хотим отметить, что кандидаты на
-                                        вакантные должности которых нам предлагали...</p>
-                                    <a href="" class="feedback_link">Читать полностью</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="row">
-                                <div class="col-sm-4 p-0">
-                                    <img src="images/feedback.png" alt="">
-
-                                </div>
-                                <div class="col-sm-8 p-0">
+                                <div class="col-md-8 col-lg-7">
                                     <h4 class="feedback_title">Екатерина Егорова</h4>
                                     <p class="feedback_sub-title">ООО “ БПМ Клауд”</p>
                                     <p class="feedback_text">Благодарим кадровое агентство Hrbel.by за оказание услуг по
@@ -896,8 +920,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 d-flex justify-content-between p-0">
-                    <div class="feedback_slider-prev"><span></span></div>
-                    <div class="feedback_slider-next"><span></span></div>
+                    <div class="feedback_slider-prev d-none d-lg-block"><span></span></div>
+                    <div class="feedback_slider-next d-none d-lg-block"><span></span></div>
                 </div>
             </div>
         </div>
@@ -954,8 +978,9 @@
                     <input class="form_forms-input" placeholder="E-mail *" type="text"><br>
                     <input class="form_forms-input" placeholder="Телефон *" type="text"><br>
                     <input class="form_forms-input" placeholder="Сообщение" type="text"><br>
-                    <input class="form_forms-checkbox" placeholder="" type="checkbox">
-                    <span class="form_forms-checkbox-text">Я согласен на обработку данных *</span>
+                    <input name="galochka" id="checkbox-id12" class="modal_checkbox" placeholder="" type="checkbox">
+                    <label for="checkbox-id12"></label>
+                    <span class="modal_checkbox-text">Я согласен на обработку данных *</span>
                     <button class="buttDark form_forms-btn">отправить</button>
                 </div>
             </div>
@@ -979,7 +1004,7 @@
                 <p class="footer_left-graphic-bydn">Пн.-Пт.: 09:00 - 20:00</p>
                 <p class="footer_left-graphic-vich">Сб.-Вс.: 10:00 - 18:00</p>
             </div>
-            <div class="col-sm-3 offset-sm-2 footer_center">
+            <div class="col-md-4 col-lg-3 offset-md-1 offset-lg-2 footer_center">
                 <ul class="footer_center-items">
                     <li class="footer_center-item footer_center-item-bold">Услуги</li>
                     <li class="footer_center-item">Поиск и подбор персонала</li>
@@ -988,7 +1013,7 @@
                     <li class="footer_center-item">HR-брендинг</li>
                 </ul>
             </div>
-            <div class="col-sm-2 offset-sm-1 text-right footer_right">
+            <div class="col-lg-2 col-md-3 offset-lg-1 text-right footer_right">
                 <a href="#"><img src="images/footertg.svg" alt=""></a>
                 <a href="#"><img src="images/footerinst.svg" alt=""></a>
                 <a href="#"><img src="images/footervk.svg" alt=""></a>
@@ -1000,16 +1025,40 @@
                 </ul>
             </div>
             <div class="col-sm-12 footer_line"></div>
-            <div class="col-sm-6"><p class="footer_bot-text">Разработка и продвижение сайта - <b>Digital агентство “Веб
+            <div class="col-sm-6 d-none d-xl-block"><p class="footer_bot-text">Разработка и продвижение сайта - <b>Digital агентство “Веб
                 Фокус”</b></p></div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 d-none d-xl-block">
                 <ul class="footer_bot-list">
                     <li class="footer_bot-item"><a href="#">Договор оферты</a></li>
                     <li class="footer_bot-item"><a href="#">Карта сайта</a></li>
                     <li class="footer_bot-item"><a href="#">Политика конфиденциальности</a></li>
                 </ul>
             </div>
-            <div class="col-sm-12"><p class="footer_end-text text-center">© 2021 ООО “Агентство по поиску персонала” УНП
+            <div class="col-sm-12 d-none d-xl-block"><p class="footer_end-text text-center">© 2021 ООО “Агентство по поиску персонала” УНП
+                193105876</p></div>
+
+            <div class="col-sm-8 d-none d-lg-block d-xl-none"><p class="footer_bot-text">Разработка и продвижение сайта - <b>Digital агентство “Веб
+                Фокус”</b></p></div>
+            <div class="col-sm-4 d-none d-lg-block d-xl-none"><p class="footer_end-text text-center">© 2021 ООО “Агентство по поиску персонала” УНП
+                193105876</p></div>
+            <div class="col-sm-8 d-none d-lg-block d-xl-none">
+                <ul class="footer_bot-list">
+                    <li class="footer_bot-item"><a href="#">Договор оферты</a></li>
+                    <li class="footer_bot-item"><a href="#">Карта сайта</a></li>
+                    <li class="footer_bot-item"><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-12 d-block d-lg-none text-center">
+                <ul class="footer_bot-list">
+                    <li class="footer_bot-item"><a href="#">Договор оферты</a></li>
+                    <li class="footer_bot-item"><a href="#">Карта сайта</a></li>
+                    <li class="footer_bot-item"><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12 d-block d-lg-none text-center"><p class="footer_bot-text">Разработка и продвижение сайта - <b>Digital агентство “Веб
+                Фокус”</b></p></div>
+            <div class="col-sm-12 d-block d-lg-none text-center"><p class="footer_end-text text-center">© 2021 ООО “Агентство по поиску персонала” УНП
                 193105876</p></div>
         </div>
     </div>
@@ -1024,18 +1073,15 @@
         <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title"
              aria-describedby="modal-1-content">
             <div role="document">
-                <header class="modal__header">
-                    <button class="modal__close" aria-label="Close modal" aria-controls="modal__container1"
-                            data-micromodal-close></button>
-                </header>
+
                 <main class="modal__content" id="modal-1-content">
                     <h2 class="title modal_title">Свяжитесь с нами</h2>
                     <form class="form" method="post">
-                        <input name="userName" class="modal_input" placeholder="Имя *" type="text"><br>
-                        <input name="userMail" class="modal_input" placeholder="E-mail *" type="email"><br>
-                        <input name="userTel" class="modal_input" placeholder="Телефон *" type="tel"><br>
+                        <input name="userName" class="modal_input userName" placeholder="Имя *" type="text" required><br>
+                        <input name="userMail" class="modal_input" placeholder="E-mail *" type="email" required><br>
+                        <input name="userTel" class="modal_input" placeholder="Телефон *" type="tel" required><br>
                         <textarea class="modal_input" placeholder="Сообщение" type="text"></textarea><br>
-                        <input name="galochka" id="checkbox-id" class="modal_checkbox" placeholder="" type="checkbox">
+                        <input required name="galochka" id="checkbox-id" class="modal_checkbox" placeholder="" type="checkbox">
                         <label for="checkbox-id"></label>
                         <span class="modal_checkbox-text">Я согласен на обработку данных *</span>
                         <!--                    <button data-micromodal-close aria-label="Close this dialog window" class="buttDark validateBtn modal__btn">отправить</button>-->

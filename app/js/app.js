@@ -19,6 +19,8 @@ const swiperFeedback = new Swiper('.feedback_swiper-container', {
     spaceBetween: 20,
     slidesPerView: 'auto',
     navigation: {
+        // el: '.swiper-pagination',
+        //     clickable: true,
         nextEl: '.feedback_slider-next',
         prevEl: '.feedback_slider-prev',
     },
@@ -32,14 +34,18 @@ const galleryThumbs = new Swiper('.gallery-thumbs', {
     watchSlidesProgress: true,
     breakpoints: {
         // when window width is >= 320px
-        1023: {
+        768: {
             slidesPerView: 4,
             spaceBetween: 10
         },
-    //     1345: {
-    //         slidesPerView: 4,
-    //         spaceBetween: 20
-    //     },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 10
+        },
+        100: {
+            slidesPerView: 1.2,
+            spaceBetween: 10
+        },
     }
 });
 const galleryTop = new Swiper('.gallery-top', {
@@ -51,6 +57,26 @@ const galleryTop = new Swiper('.gallery-top', {
     thumbs: {
         swiper: galleryThumbs,
     },
+});
+const swiper = new Swiper('.scroll', {
+    slidesPerView: 3,
+    // slidesPerView: 'auto',
+    spaceBetween: 0,
+    freeMode: true,
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    // },
+});
+const swiper1 = new Swiper('.scroll2', {
+    // slidesPerView: 2,
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    // freeMode: true,
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    // },
 });
 MicroModal.init();
 //............................поиск
@@ -70,6 +96,8 @@ window.addEventListener('resize', serchfunk)
 let headerSearch = document.querySelector('.header_search')
 let headerMenuItemD = document.querySelectorAll('.header_menu-item-d')
 let headerLope = document.querySelector('.header_lope')
+let headerLopeBurger = document.querySelector('.header_lope-menu')
+let headerSearchMenu = document.querySelector('.header_search-menu')
 
 headerSearch.addEventListener('click', function () {
     let currentWidth = window.innerWidth;
@@ -91,7 +119,7 @@ headerSearch.addEventListener('click', function () {
 headerLope.addEventListener('click', function () {
     let currentWidth = window.innerWidth;
     let style = document.createElement('style');
-    console.log(currentWidth)
+    console.log(currentWidth);
     style.textContent = `
     .activeInput {
     width: ${currentWidth / 2}px!important;
@@ -107,6 +135,7 @@ headerLope.addEventListener('click', function () {
     headerLope.classList.toggle('activeIcoSearch')
 
 })
+
 document.querySelector('.header_menu-item-search').addEventListener('keydown', function (e) {
     if (e.keyCode === 13) {
         headerSearch.classList.remove('activeInput');
@@ -144,7 +173,7 @@ function addElementD(e) {
     let addDiv = document.createElement('div'),
         mValue = Math.max(this.clientWidth, this.clientHeight),
         rect = this.getBoundingClientRect();
-    sDiv = addDiv.style,
+    sDiv = addDiv.style;
         px = 'px';
     this.classList.add('newBackground')
     sDiv.width = sDiv.height = mValue + px;
@@ -164,7 +193,7 @@ function addElementO(e) {
     let addDiv = document.createElement('div'),
         mValue = Math.max(this.clientWidth, this.clientHeight),
         rect = this.getBoundingClientRect();
-    sDiv = addDiv.style,
+    sDiv = addDiv.style;
         px = 'px';
     this.classList.add('newBackgroundOrange')
     sDiv.width = sDiv.height = mValue + px;
@@ -179,6 +208,13 @@ function removeElementO(e) {
     this.classList.remove('newBackgroundOrange')
 }
 
+
+
+
+headerLopeBurger.addEventListener('click', function () {
+    headerSearchMenu.value = ''
+
+})
 //........................эффект  кнопки
 
 //.......................валидация формы
@@ -194,3 +230,38 @@ function showMenu () {
 }
 
 //.......................menu burger
+
+//.....................читать полностью
+
+document.querySelectorAll('.feedback_link').forEach(u=>u.addEventListener('click', openAllText))
+function openAllText() {
+    this.innerText === 'Скрыть'?this.innerText = 'Читать еще':this.innerText = 'Скрыть'
+    this.previousSibling.previousSibling.classList.toggle('d-none')
+    this.previousSibling.previousSibling.previousSibling.previousSibling.classList.toggle('d-none')
+}
+//.....................читать полностью
+
+//.....................Filter
+document.querySelectorAll('.podcat').forEach(u=> {
+    u.addEventListener('click', () => {
+        document.querySelectorAll('.vacancy_tabs-item-sub').forEach(u=> {
+            u.classList.toggle('hideSubtitle')
+        })
+    })
+})
+const filterBox = document.querySelectorAll('.box-filter')
+document.querySelector('.vacancy_tabs-body').addEventListener('click', event => {
+    if(event.target.tagName !== 'BUTTON') return false;
+    let filterClass = event.target.dataset['filter'];
+    console.log(filterClass)
+    filterBox.forEach(elem => {
+        elem.classList.remove(('hideOpasity'));
+        if(!elem.classList.contains(filterClass)) {
+
+            elem.classList.add('hideOpasity');
+        }
+    })
+})
+
+//.....................Filter
+

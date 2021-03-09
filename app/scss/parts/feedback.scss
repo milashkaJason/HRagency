@@ -28,7 +28,13 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 150%;
-  color: var(--primaryColor);
+  color: var(--primaryColor)!important;
+  transition: all ease .4s;
+  &:hover {
+    cursor: pointer;
+    color: var(--darkText)!important;
+    transition: all ease .4s;
+  }
 }
 //btn
 

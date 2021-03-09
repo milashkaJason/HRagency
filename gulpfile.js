@@ -33,7 +33,7 @@ function browsersync() {
 
 function scripts() {
     return src([ // Берём файлы из источников
-        // 'app/js/lib/app.carouselSlider.min.js', // Пример подключения библиотеки
+        // 'app/js/lib/scrollbar.js', // Пример подключения библиотеки
         'app/js/app.js', // Пользовательские скрипты, использующие библиотеку, должны быть подключены в конце
     ])
         .pipe(concat('app.min.js')) // Конкатенируем в один файл

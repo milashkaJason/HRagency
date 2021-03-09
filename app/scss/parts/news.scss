@@ -22,6 +22,11 @@
 }
 .news_item {
   padding: 0 0 106px 0;
+  border: 1px solid transparent;
+  &:hover {
+    cursor: pointer;
+    border: 1px solid var(--primaryColor);
+  }
 }
 .news_item-title {
   font-weight: bold;

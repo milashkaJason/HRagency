@@ -24,3 +24,12 @@
   line-height: 90%;
   color: #FFF4ED;
 }
+.faq_item {
+transition: all ease .4s;
+  &:hover {
+    cursor: pointer;
+    color: var(--lightText);
+    background: var(--primaryColor);
+    transition: all ease .4s;
+  }
+}

@@ -27,10 +27,10 @@
   border: none;
   outline: none;
   transition: all ease .4s;
-  color: var(--primaryColor);
+  color: var(--primaryColor)!important;
 
   &:hover {
-    color: #f61e1e;
+    color: #f61e1e!important;
   }
 
   &:hover, &:focus {
@@ -95,4 +95,7 @@
   text-align: center;
   border: none;
   outline: none;
+}
+.rules_item {
+  padding: 0 0 30px 0;
 }

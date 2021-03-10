@@ -1,11 +1,10 @@
 @media screen and(max-width: 1464px) {
-  .header_menu-item:nth-child(2) {
-    font-weight: 600;
+  .header_menu-item-tel {
     margin: 0 55px 0 77px;
   }
 }
 @media screen and(max-width: 1430px) {
-  .header_menu-item:nth-child(2) {
+  .header_menu-item-tel {
     font-weight: 600;
     margin: 0 55px 0 77px;
   }
@@ -29,10 +28,10 @@
   }
 }
 @media screen and(max-width: 1308px) {
-  .header_menu-item:nth-child(2) {
-    margin: 0 28px 0 77px;
+  .header_menu-item-tel {
+    margin: 0 28px 0 57px;
   }
-  .header_menu-item {
+  .menu-item-type-custom {
     list-style: none;
     margin: 0 15px;
   }
@@ -68,6 +67,7 @@
 }
 // Extra large devices (large desktops, 1200px and up)
 @media (max-width: 1200px) {
+
   .slider-btn-left, .slider-btn-right {
     right: -64px;
   }
@@ -83,21 +83,21 @@
   .footer_end-text {
     padding: 0 0 0 0;
   }
-  .header_menu-item:nth-child(2) {
-    margin: 0 17px 0 91px;
+  .header_menu-item-tel {
+    margin: 0 17px 0 44px;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (max-width: 1071px) {
-  .header_menu-item:nth-child(2) {
-    margin: 0 17px 0 54px;
+  .header_menu-item-tel {
+    margin: 0 17px 0 24px;
   }
   .hero_title {
     font-size: 60px;
     margin: 109px 0 0 0;
   }
-  .header_menu-item {
+  .menu-item-type-custom {
     list-style: none;
     margin: 0px 10px;
   }
@@ -107,7 +107,7 @@
   }
 }
 @media (max-width: 992px) {
-  .header_menu {
+  .header_nav {
     display: flex;
     justify-content: space-between;
   }
@@ -169,6 +169,13 @@
   }
   .footer_right-list {
     padding: 38px 0 0 0;
+  }
+  .header_menu {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -378,14 +385,14 @@
   .header_menu-item a {
     font-size: 14px;
   }
-  .header_menu-item:nth-child(1) {
+  .header_menu-item-logo {
     max-width: 100px;
   }
   .header {
     background: var(--lightText);
     padding: 15px 0 0 0;
   }
-  .header_menu-item:nth-child(2) {
+  .header_menu-item-tel {
     margin: 0 0 0 10px;
   }
   .header_menu-item img {

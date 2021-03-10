@@ -69,37 +69,39 @@
 
 <header class="header">
     <div class="container-header">
-        <ul class="header_menu">
-            <li class="header_menu-item">
+        <nav class='header_nav'>
+            <span class="header_menu-item-logo">
                 <a href=""><img src="images/logoHeader.svg" alt=""></a>
-            </li>
-            <li class="header_menu-item">
+            </span>
+            <span class="header_menu-item-tel">
                 <a href="">+ 375 (44) 777 - 29 - 35</a>
-            </li>
-            <li class="header_menu-item header_menu-item-d d-none d-lg-block">
-                <a href="">Услуги</a>
-            </li>
-            <li class="header_menu-item header_menu-item-d d-none d-lg-block">
-                <a href="">Вакансии</a>
-            </li>
-            <li class="header_menu-item header_menu-item-d d-none d-lg-block">
-                <a href="">Инфоцентр</a>
-            </li>
-            <li class="header_menu-item header_menu-item-d d-none d-lg-block">
-                <a href="">О компании</a>
-            </li>
-            <li class="header_menu-item header_menu-item-d d-none d-lg-block">
-                <a href="">Контакты</a>
-            </li>
-            <li class="header_menu-item header_menu-item-search d-none d-lg-block">
-                <input class="header_search" type="text">
-                <img class="header_lope" src="images/loupe.svg" alt="">
-            </li>
-            <li class="header_menu-item menu-burger d-block d-lg-none">
-                <span></span>
-            </li>
+            </span>
+            <ul class="header_menu header_menu-item-d">
 
-        </ul>
+                <li class="menu-item-type-custom">
+                    <a href="">Услуги</a>
+                </li>
+                <li class="menu-item-type-custom">
+                    <a href="">Вакансии</a>
+                </li>
+                <li class="menu-item-type-custom">
+                    <a href="">Инфоцентр</a>
+                </li>
+                <li class="menu-item-type-custom">
+                    <a href="">О компании</a>
+                </li>
+                <li class="menu-item-type-custom">
+                    <a href="">Контакты</a>
+                </li>
+            </ul>
+            <span class="header_menu-item header_menu-item-search d-none d-lg-block">
+                <input class="header_search header_search-inputapp" type="text">
+                <img class="header_lope" src="images/loupe.svg" alt="">
+            </span>
+            <span class="header_menu-item menu-burger d-block d-lg-none">
+                <span></span>
+            </span>
+        </nav>
     </div>
 </header>
 
@@ -408,7 +410,7 @@
         <div class="vacancy_background d-none d-md-block">Вакансии</div>
         <div class="row">
             <div class="col-12 d-block d-sm-none text-center"><h2 class="title vacancy_title">Вакансии</h2></div>
-            <div class="vacancy_tabs-body">
+            <div class="d-block d-md-none vacancy_tabs-body">
             <div class="swiper-container swiper-wrapper-border scroll">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -497,11 +499,11 @@
                 </div>
                 <button data-micromodal-trigger="modal-1" class="buttDark vacancy_btn ">консультация</button>
             </div>
-            <div class="offset-sm-1 col-sm-5  d-none d-sm-block">
+            <div class="offset-sm-1 col-sm-5  d-none d-md-block">
                 <div class="vacancy_tabs">
                     <div class="vacancy_tabs-title">Категории</div>
                     <hr class="vacancy_line">
-                    <div class="vacancy_tabs-body">
+                    <div class="vacancy_tabs-body1">
                         <button data-filter="top" class="vacancy_tabs-item top">TOP вакансии</button>
                         <button data-filter="hr" class="vacancy_tabs-item hr">HR</button>
                         <p class="podcat vacancy_tabs-item it">IT</p>

@@ -81,12 +81,12 @@ const swiper1 = new Swiper('.scroll2', {
 MicroModal.init();
 //............................поиск
 function serchfunk() {
-    if(window.innerWidth<1228) {
+    if(window.innerWidth<1268) {
         let lope = document.querySelector('.header_lope')
         lope.style.top = `0px`;
         lope.style.left = `8px`;
         lope.style.transform = `scale(1.5)`;
-        let searchinp = document.querySelectorAll('.header_menu-item')[7].firstChild.nextSibling
+        let searchinp = document.querySelector('.header_search-inputapp');
         searchinp.style.width = `0px`
 
     }
@@ -262,6 +262,18 @@ document.querySelector('.vacancy_tabs-body').addEventListener('click', event => 
         }
     })
 })
+const filterBox1 = document.querySelectorAll('.box-filter')
+document.querySelector('.vacancy_tabs-body1').addEventListener('click', event => {
+    if(event.target.tagName !== 'BUTTON') return false;
+    let filterClass = event.target.dataset['filter'];
+    console.log(filterClass)
+    filterBox1.forEach(elem => {
+        elem.classList.remove(('hideOpasity'));
+        if(!elem.classList.contains(filterClass)) {
+
+            elem.classList.add('hideOpasity');
+        }
+    })
+})
 
 //.....................Filter
-

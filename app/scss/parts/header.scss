@@ -29,6 +29,7 @@
       color: var(--primaryColor);
     }
   }
+
 }
 .header_menu-item input{
   margin: 0;
@@ -100,4 +101,7 @@
 }
 .d-nonen {
   display: none!important;
+}
+.menu-item {
+   padding: 0 0 0 0!important;
 }

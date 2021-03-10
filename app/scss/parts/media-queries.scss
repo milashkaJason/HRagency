@@ -1,3 +1,11 @@
+@media screen and(min-width: 1500px) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 50px;
+  }
+}
 @media screen and(max-width: 1464px) {
   .header_menu-item-tel {
     margin: 0 55px 0 77px;
@@ -452,5 +460,59 @@
   }
   .vacancy_tabs-item {
     font-size: 16px;
+  }
+  .header {
+    overflow: hidden!important;
+  }
+  .hero {
+    overflow: hidden!important;
+  }
+  .about {
+    overflow: hidden!important;
+  }
+  .service {
+    overflow: hidden!important;
+  }
+  .rules {
+    overflow: hidden!important;
+  }
+  .prices {
+    overflow: hidden!important;
+  }
+  .vacancy {
+    overflow: hidden!important;
+  }
+  .result {
+    overflow: hidden!important;
+  }
+  .steps {
+    overflow: hidden!important;
+  }
+  .advantages {
+    overflow: hidden!important;
+  }
+  .faq {
+    overflow: hidden!important;
+  }
+  .people {
+    overflow: hidden!important;
+  }
+  .test {
+    overflow: hidden!important;
+  }
+  .news {
+    overflow: hidden!important;
+  }
+  .feedback {
+    overflow: hidden!important;
+  }
+  .footer {
+    overflow: hidden!important;
+  }
+  .form {
+    overflow: hidden!important;
+  }
+  .form_title:before {
+    display: none!important;
   }
 }
